@@ -35,7 +35,7 @@ public class UserAction {
 			String password = request.getParameter("password");
 			User user = new User();
 			user.setLoginName(name);
-			user.setPassword(password);
+			user.setPassword(password); 
 			user.setEmployDate(new Date());
             Map map = userService.addUser(user);
 			user = userService.getUser("admin", "admin");
