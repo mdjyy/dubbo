@@ -44,7 +44,7 @@ public class UserAction {
 			log.info("返回的结果retJson:"+retJson);
 			response.setContentType("text/html;charset=utf-8");
 			response.getWriter().write(retJson);
-		} catch (Exception e) {
+		} catch (Exception e) {  
 			e.printStackTrace(); 
 		}
 	}
