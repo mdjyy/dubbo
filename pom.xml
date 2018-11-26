@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.mdj</groupId>
+  <artifactId>Dubbo</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <build/>
+  <properties>
+        <spring.version>4.3.10RELEASE</spring.version>
+        <dubbo.version>2.6.0</dubbo.version>
+        <zookeeper.version>3.4.10</zookeeper.version>
+        <zkclient.version>0.3</zkclient.version>
+        <log4j.version>1.2.14</log4j.version>
+        <jstl.version>1.2</jstl.version>
+        <standard.version>1.1.2</standard.version>
+        <jackson-databind.version>2.5.4</jackson-databind.version>
+		<mybatis.version>3.2.6</mybatis.version>
+		<mysql.version>5.1.5</mysql.version>
+    </properties>
+  <modules>
+  	<module>Dubbo_Service</module>
+    <module>Dubbo_Web</module>
+  </modules>
+</project>

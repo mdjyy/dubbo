@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mdj.dao.interfaces.UserDao">
+	<!-- 自定义返回结果集 -->
+	<resultMap type="com.mdj.bean.User" id="userList"></resultMap> 
+	<select id="getUser" resultType="com.mdj.bean.User">
+		select * from gzpy_user where loginName=#{0} and password = #{1};
+	</select>
+	<!-- <select id ="findinset" parameterType="String" resultMap="citylist"> 
+		select * from city where find_in_set(#{cityName},cityName); </select> -->
+	<insert id="addUser" parameterType="com.mdj.bean.User" >
+	    insert into  gzpy_user(loginName,password,sex,employDate) values (#{loginName},#{password},#{sex},#{employDate}); 
+	</insert>	
+</mapper>
