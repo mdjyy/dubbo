@@ -38,7 +38,7 @@
 		</dependency>
 		<dependency>
 			<groupId>com.mdj</groupId>
-			<artifactId>Dubbo_Service</artifactId>
+			<artifactId>Dubbo_Api</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>

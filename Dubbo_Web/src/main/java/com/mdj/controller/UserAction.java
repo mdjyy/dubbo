@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.alibaba.fastjson.JSONObject;
+import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.mdj.TestService;
 import com.mdj.bean.User;
 import com.mdj.service.interfaces.IUserService;
@@ -40,7 +41,7 @@ public class UserAction {
             Map map = userService.addUser(user);
 			user = userService.getUser("admin", "admin");
 			map.put("user", user);
-			String retJson = JSONObject.toJSONString(map);
+			String retJson = JSONObject.toJSONString(map, SerializerFeature.WriteDateUseDateFormat);
 			log.info("返回的结果retJson:"+retJson);
 			response.setContentType("text/html;charset=utf-8");
 			response.getWriter().write(retJson);

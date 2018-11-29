@@ -21,5 +21,6 @@
   <modules>
   	<module>Dubbo_Service</module>
     <module>Dubbo_Web</module>
+    <module>Dubbo_Api</module>
   </modules>
 </project>

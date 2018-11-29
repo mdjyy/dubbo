@@ -15,7 +15,6 @@ import com.mdj.dao.interfaces.UserDao;
 import com.mdj.service.interfaces.IUserService;
 
 @Service(interfaceName="com.mdj.service.interfaces.IUserService")
-//@org.springframework.stereotype.Service("userService")
 public class UserServiceImpl implements IUserService{
 
 	private static Logger log = Logger.getLogger(UserServiceImpl.class);

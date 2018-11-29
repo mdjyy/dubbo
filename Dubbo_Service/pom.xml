@@ -33,33 +33,13 @@
 	</build>
 	<dependencies>
 
-		<!-- Logger日志 -->
+
 		<dependency>
-			<groupId>log4j</groupId>
-			<artifactId>log4j</artifactId>
-			<version>${log4j.version}</version>
+			<groupId>com.mdj</groupId>
+			<artifactId>Dubbo_Api</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 
-		<!-- dubbo -->
-		<dependency>
-			<groupId>com.alibaba</groupId>
-			<artifactId>dubbo</artifactId>
-			<version>${dubbo.version}</version>
-		</dependency>
-
-		<!-- zk -->
-		<dependency>
-			<groupId>org.apache.zookeeper</groupId>
-			<artifactId>zookeeper</artifactId>
-			<version>${zookeeper.version}</version>
-		</dependency>
-
-		<!-- zkclient 用于访问zookeeper -->
-		<dependency>
-			<groupId>com.101tec</groupId>
-			<artifactId>zkclient</artifactId>
-			<version>${zkclient.version}</version>
-		</dependency>
 
 		<!-- mysql -->
 		<dependency>
@@ -75,22 +55,7 @@
 			<version>${mybatis.version}</version>
 		</dependency>
 
-		<!-- spring -->
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-jdbc</artifactId>
-			<version>4.0.2.RELEASE</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-aop</artifactId>
-			<version>4.3.10.RELEASE</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-core</artifactId>
-			<version>4.3.10.RELEASE</version>
-		</dependency>
+
 		<dependency>
 			<groupId>org.mybatis</groupId>
 			<artifactId>mybatis-spring</artifactId>
@@ -104,11 +69,6 @@
 			<version>1.2.2</version>
 		</dependency>
 
-		<!-- 格式化对象，方便输出日志 -->
-		<dependency>
-			<groupId>com.alibaba</groupId>
-			<artifactId>fastjson</artifactId>
-			<version>1.1.41</version>
-		</dependency>
+
 	</dependencies>
 </project>
