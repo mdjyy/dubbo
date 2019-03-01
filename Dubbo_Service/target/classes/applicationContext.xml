@@ -20,4 +20,6 @@
     <import resource="dubbo.xml"/>  
     <!-- mybatis配置 -->
     <import resource="spring-mybatis.xml"/>
+    <!-- redis配置 -->
+    <import resource="redis.xml"/>
 </beans>
